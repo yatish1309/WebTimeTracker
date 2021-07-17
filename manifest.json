@@ -1,0 +1,28 @@
+{
+  "name":"Web time tracker",
+  "manifest_version":2,
+  "version":"1.0",
+  "description":"Tracks time on the website",
+  "icons":{
+    "16":"icons/timer16.png",
+    "48":"icons/timer48.png",
+    "128":"icons/timer128.png"
+  },
+  "background":{
+    "scripts":["background.js"],
+    "persistence":"true"
+  },
+  "browser_action":{
+    "default_popup":"popup.html",
+    "default_icon": {
+        "16": "icons/timer16.png"
+    },
+    "default_title":"Web Time Tracker"
+},
+"permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "webNavigation"
+]
+}
